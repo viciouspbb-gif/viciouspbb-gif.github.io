@@ -1,7 +1,7 @@
 VICIOUS
 VICIOUS is a research-driven studio building daring AI-native products. We design with speed, rigor, and a taste for the dramatic.
 
-Contact: vicious.pbb@gmail.com
+Contact: vicious.global.office@gmail.com
 Active Builds
 Learn Indonesia AI
 Immersive Indonesian-language mentoring with Garuda-sensei, combining cinematic storytelling with real-time AI pronunciation coaching.
