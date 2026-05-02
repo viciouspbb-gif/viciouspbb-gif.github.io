@@ -75,38 +75,78 @@
       margin: 0;
       font-size: 0.95rem;
     }
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .footer a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .footer a:hover {
+      color: var(--accent);
+    }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .lang-switch button {
+      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text);
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+    .lang-switch button:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .lang-switch button.active {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
   </style>
 </head>
 <body>
   <main class="card">
-    <h1>VICIOUS</h1>
-    <p>
+    <div class="lang-switch">
+      <button id="lang-ja" class="active" onclick="setLanguage('ja')">日本語</button>
+      <button id="lang-en" onclick="setLanguage('en')">English</button>
+    </div>
+
+    <h1 data-ja="VICIOUS" data-en="VICIOUS">VICIOUS</h1>
+    <p data-ja="VICIOUS develops VICIOUS CORE, an AI engine that delivers stress-free native pronunciation and nuance reproduction across applications." data-en="VICIOUS develops VICIOUS CORE, an AI engine that delivers stress-free native pronunciation and nuance reproduction across applications.">
       VICIOUS develops VICIOUS CORE, an AI engine that delivers stress-free native pronunciation and nuance reproduction across applications.
     </p>
 
     <section class="contact">
-      <strong>Contact:</strong> <a href="mailto:vicious.global.office@gmail.com">vicious.global.office@gmail.com</a>
+      <strong data-ja="Contact:" data-en="Contact:">Contact:</strong> <a href="mailto:vicious.global.office@gmail.com">vicious.global.office@gmail.com</a>
     </section>
 
     <section>
-      <h2>VICIOUS CORE</h2>
-      <p>
+      <h2 data-ja="VICIOUS CORE" data-en="VICIOUS CORE">VICIOUS CORE</h2>
+      <p data-ja="VICIOUS CORE delivers stress-free native pronunciation and nuance reproduction in language learning. Developed to provide dedicated support through applications—starting with golf—it aims to be helpful and essential across various domains." data-en="VICIOUS CORE delivers stress-free native pronunciation and nuance reproduction in language learning. Developed to provide dedicated support through applications—starting with golf—it aims to be helpful and essential across various domains.">
         VICIOUS CORE delivers stress-free native pronunciation and nuance reproduction in language learning. Developed to provide dedicated support through applications—starting with golf—it aims to be helpful and essential across various domains.
       </p>
     </section>
 
     <section>
-      <h2>VICIOUS - Our Products</h2>
+      <h2 data-ja="VICIOUS - Our Products" data-en="VICIOUS - Our Products">VICIOUS - Our Products</h2>
 
-      <h3>🗣️ Language Support</h3>
-      <p>
+      <h3 data-ja="🗣️ Language Support" data-en="🗣️ Language Support">🗣️ Language Support</h3>
+      <p data-ja="テクノロジーの力で、世界の言語をより身近に。AIを活用した次世代の語学学習エコシステムです。" data-en="Technology brings world languages closer. Next-generation language learning ecosystem powered by AI.">
         テクノロジーの力で、世界の言語をより身近に。AIを活用した次世代の語学学習エコシステムです。
       </p>
 
       <div class="products">
         <article class="product-card">
-          <h3>Learn BISAYA</h3>
-          <p>
+          <h3 data-ja="Learn BISAYA" data-en="Learn BISAYA">Learn BISAYA</h3>
+          <p data-ja="<strong>AIが拓く、ビサヤ語学習の新しいスタンダード</strong><br><br>フィリピン・ビサヤ地方の言語「ビサヤ語（セブアノ語）」を、AIの力で直感的にマスターできる画期的なアプリです。初心者でも自然なコミュニケーションスキルを身につけられるよう、対話型のAI機能があなたの学習を強力にサポート。異文化の扉をスマートに開く、次世代の言語学習パートナーです。<br><br>対応プラットフォーム: Android" data-en="<strong>New Standard for Bisaya Language Learning</strong><br><br>Master Visaya (Cebuano) intuitively with AI. A revolutionary app for learning the language of the Visayas region in the Philippines. Interactive AI features support beginners in developing natural communication skills. Your next-generation language learning partner that opens doors to new cultures.<br><br>Platform: Android">
             <strong>AIが拓く、ビサヤ語学習の新しいスタンダード</strong><br><br>
             フィリピン・ビサヤ地方の言語「ビサヤ語（セブアノ語）」を、AIの力で直感的にマスターできる画期的なアプリです。初心者でも自然なコミュニケーションスキルを身につけられるよう、対話型のAI機能があなたの学習を強力にサポート。異文化の扉をスマートに開く、次世代の言語学習パートナーです。<br><br>
             対応プラットフォーム: Android
@@ -114,8 +154,8 @@
         </article>
 
         <article class="product-card">
-          <h3>Learn INDONESIA</h3>
-          <p>
+          <h3 data-ja="Learn INDONESIA" data-en="Learn INDONESIA">Learn INDONESIA</h3>
+          <p data-ja="<strong>インドネシア語を、より自然に、より深く</strong><br><br>成長著しいインドネシアの言葉と文化を、AIを活用して効率的に学習できるアプリです。実践的な会話表現からビジネスに役立つフレーズまで、一人ひとりの習熟度に合わせてAIが学習フローを最適化。多角的なコミュニケーション力をシームレスに育てます。<br><br>対応プラットフォーム: Android（Coming Soon）" data-en="<strong>Indonesian, More Natural, More Deep</strong><br><br>Efficiently learn the language and culture of rapidly growing Indonesia with AI. From practical conversation expressions to business-use phrases, AI optimizes the learning flow based on individual proficiency. Seamlessly develop multifaceted communication skills.<br><br>Platform: Android（Coming Soon）">
             <strong>インドネシア語を、より自然に、より深く</strong><br><br>
             成長著しいインドネシアの言葉と文化を、AIを活用して効率的に学習できるアプリです。実践的な会話表現からビジネスに役立つフレーズまで、一人ひとりの習熟度に合わせてAIが学習フローを最適化。多角的なコミュニケーション力をシームレスに育てます。<br><br>
             対応プラットフォーム: Android（Coming Soon）
@@ -123,23 +163,54 @@
         </article>
       </div>
 
-      <h3>🏃‍♂️ Body Support</h3>
-      <p>
+      <h3 data-ja="🏃‍♂️ Body Support" data-en="🏃‍♂️ Body Support">🏃‍♂️ Body Support</h3>
+      <p data-ja="心身のコンディションを最適化し、すべての人のパフォーマンスを最大化するスマートなサポートシステムです。" data-en="Smart support system that optimizes physical and mental conditions to maximize everyone's performance.">
         心身のコンディションを最適化し、すべての人のパフォーマンスを最大化するスマートなサポートシステムです。
       </p>
 
       <div class="products">
         <article class="product-card">
-          <h3>Swingtrace</h3>
-          <p>
+          <h3 data-ja="Swingtrace" data-en="Swingtrace">Swingtrace</h3>
+          <p data-ja="<strong>身体の動きを可視化し、パフォーマンスを最適化する</strong><br><br>A neural motion engine powered by ViciousCore for golf performance: capture, diagnose, and prescribe micro-adjustments directly from your phone.<br><br>対応プラットフォーム: Android（Coming Soon）" data-en="<strong>Visualize Body Movement, Optimize Performance</strong><br><br>A neural motion engine powered by ViciousCore for golf performance: capture, diagnose, and prescribe micro-adjustments directly from your phone.<br><br>Platform: Android（Coming Soon）">
             <strong>身体の動きを可視化し、パフォーマンスを最適化する</strong><br><br>
             A neural motion engine powered by ViciousCore for golf performance: capture, diagnose, and prescribe micro-adjustments directly from your phone.<br><br>
-            対応プラットフォーム: Android
+            対応プラットフォーム: Android（Coming Soon）
           </p>
         </article>
       </div>
     </section>
+
+    <footer class="footer">
+      <p data-ja="Contact:" data-en="Contact:">Contact:</p>
+      <p>Support Email: <a href="mailto:vicious.global.office@gmail.com">vicious.global.office@gmail.com</a></p>
+      <br>
+      <p data-ja="Address:" data-en="Address:">Address:</p>
+      <p>Ginza, Tokyo, Japan</p>
+      <br>
+      <p>© 2026 VICIOUS. All Rights Reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+    </footer>
   </main>
+
+  <script>
+    let currentLang = 'ja';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      
+      // Update buttons
+      document.getElementById('lang-ja').classList.toggle('active', lang === 'ja');
+      document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+      
+      // Update content
+      document.querySelectorAll('[data-ja][data-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+    }
+
+    // Initialize
+    setLanguage('ja');
+  </script>
 </body>
 </html>
 
