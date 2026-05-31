@@ -110,6 +110,11 @@
       background: var(--accent);
       border-color: var(--accent);
     }
+    .section-divider {
+      border: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      margin: 48px 0;
+    }
   </style>
 </head>
 <body>
@@ -136,18 +141,21 @@
       </p>
 
       <div class="products">
-        <article class="product-card">
-          <h3 data-ja="Learn BISAYA" data-en="Learn BISAYA">Learn BISAYA</h3>
-          <p data-ja="<strong>AIで、ビサヤ語を"使えるレベル"へ。</strong><br><br>フィリピン・ビサヤ地方の言語「ビサヤ語（セブアノ語）」を、対話型AIで直感的に習得。発音・ニュアンス・会話力を実践ベースで強化し、自然なコミュニケーションを可能にします。<br><br>対応プラットフォーム: Android" data-en="<strong>AI brings Bisaya to usable level</strong><br><br>Master Visaya (Cebuano) intuitively with conversational AI. Strengthen pronunciation, nuance, and conversation skills through practical training, enabling natural communication.<br><br>Platform: Android">
-            <strong>AIで、ビサヤ語を"使えるレベル"へ。</strong><br><br>
-            フィリピン・ビサヤ地方の言語「ビサヤ語（セブアノ語）」を、対話型AIで直感的に習得。発音・ニュアンス・会話力を実践ベースで強化し、自然なコミュニケーションを可能にします。<br><br>
-            対応プラットフォーム: Android
-          </p>
-        </article>
+  <article class="product-card">
+    <h3 data-ja="Learn BISAYA" data-en="Learn BISAYA">Learn BISAYA</h3>
+
+    <p 
+      data-ja="<strong>AIで、ビサヤ語を『使えるレベル』へ。</strong><br><br>フィリピン・ビサヤ地方の言語『ビサヤ語（セブアノ語）』を、対話型AIで直感的に習得。発音・ニュアンス・会話力を実践ベースで強化し、自然なコミュニケーションを可能にします。<br><br>対応プラットフォーム: Android"
+      
+      data-en="<strong>Master Bisaya with AI.</strong><br><br>Learn the language of the Visayas (Cebuano) through interactive AI conversations. Improve pronunciation, nuance, and real-world communication skills for natural conversations.<br><br>Platform: Android">
+    </p>
+
+  </article>
+</div>
 
         <article class="product-card">
           <h3 data-ja="Learn INDONESIA" data-en="Learn INDONESIA">Learn INDONESIA</h3>
-          <p data-ja="<strong>インドネシア語を、実践レベルまで最短で。</strong><br><br>日常会話からビジネス表現まで、AIが最適な学習フローを構築。理解だけでなく「使える力」を効率的に伸ばします。<br><br>対応プラットフォーム: Android（Coming Soon）" data-en="<strong>Indonesian to practical level in shortest time</strong><br><br>From daily conversation to business expressions, AI builds the optimal learning flow. Develop usable skills efficiently, not just understanding.<br><br>Platform: Android（Coming Soon）">
+          <p data-ja="<strong>インドネシア語を、実践レベルまで最短で。</strong><br><br>日常会話からビジネス表現まで、AIが最適な学習フローを構築。理解だけでなく「使える力」を効率的に伸ばします。<br><br>対応プラットフォーム: Android（2026年 リリース予定）" data-en="<strong>Indonesian to practical level in shortest time</strong><br><br>From daily conversation to business expressions, AI builds the optimal learning flow. Develop usable skills efficiently, not just understanding.<br><br>Platform: Android (Launching 2026)">
             <strong>インドネシア語を、実践レベルまで最短で。</strong><br><br>
             日常会話からビジネス表現まで、AIが最適な学習フローを構築。理解だけでなく「使える力」を効率的に伸ばします。<br><br>
             対応プラットフォーム: Android（Coming Soon）
@@ -162,8 +170,8 @@
 
       <div class="products">
         <article class="product-card">
-          <h3 data-ja="Swingtrace" data-en="Swingtrace">Swingtrace</h3>
-          <p data-ja="<strong>スイングを可視化し、再現性を作る。</strong><br><br>V-coreによる動作解析で、スイングをその場で診断・改善。感覚に頼らず、データに基づいた精度の高い調整を可能にします。<br><br>対応プラットフォーム: Android（Coming Soon）" data-en="<strong>Visualize swing, create reproducibility</strong><br><br>V-core motion analysis enables on-the-spot swing diagnosis and improvement. Achieve high-precision adjustments based on data, not sensation.<br><br>Platform: Android（Coming Soon）">
+          <h3 data-ja="SwingTrace PRO by V-core" data-en="SwingTrace PRO by V-core">SwingTrace PRO by V-core</h3>
+          <p data-ja="<strong>スイングを可視化し、再現性を作る。</strong><br><br>V-coreによる動作解析で、スイングをその場で診断・改善。感覚に頼らず、データに基づいた精度の高い調整を可能にします。<br><br>対応プラットフォーム: Android（2026年 リリース予定）" data-en="<strong>Visualize swing, create reproducibility</strong><br><br>V-core motion analysis enables on-the-spot swing diagnosis and improvement. Achieve high-precision adjustments based on data, not sensation.<br><br>Platform: Android (Launching 2026)">
             <strong>スイングを可視化し、再現性を作る。</strong><br><br>
             V-coreによる動作解析で、スイングをその場で診断・改善。感覚に頼らず、データに基づいた精度の高い調整を可能にします。<br><br>
             対応プラットフォーム: Android（Coming Soon）
@@ -173,14 +181,22 @@
     </section>
 
     <footer class="footer">
-      <p data-ja="お問い合わせ:" data-en="Contact:">Contact:</p>
-      <p data-ja="サポートメール: <a href=\"mailto:vicious.global.office@gmail.com\">vicious.global.office@gmail.com</a>" data-en="Support Email: <a href=\"mailto:vicious.global.office@gmail.com\">vicious.global.office@gmail.com</a>">Support Email: <a href="mailto:vicious.global.office@gmail.com">vicious.global.office@gmail.com</a></p>
-      <br>
-      <p data-ja="住所:" data-en="Address:">Address:</p>
-      <p data-ja="日本東京都中央区銀座" data-en="Ginza, Tokyo, Japan">Ginza, Tokyo, Japan</p>
+      <p data-ja='お問い合わせ: <a href="mailto:vicious.global.office@gmail.com">vicious.global.office@gmail.com</a>' 
+   data-en='Contact: <a href="mailto:vicious.global.office@gmail.com">vicious.global.office@gmail.com</a>'>
+</p>
+
+<br>
+
+<p data-ja="住所: 日本東京都中央区銀座" 
+   data-en="Address: Ginza, Tokyo, Japan">
+</p>
       <br>
       <p data-ja="© 2026 VICIOUS. 全著作権所有。" data-en="© 2026 VICIOUS. All Rights Reserved.">© 2026 VICIOUS. All Rights Reserved.</p>
-      <p><a href="privacy.html" data-ja="プライバシーポリシー" data-en="Privacy Policy">Privacy Policy</a></p>
+      <p>
+        <a href="privacy.html" data-ja="プライバシーポリシー" data-en="Privacy Policy">プライバシーポリシー</a>
+        &nbsp;|&nbsp;
+        <a href="terms.html">利用規約</a>
+      </p>
     </footer>
   </main>
 
