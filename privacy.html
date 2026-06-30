@@ -103,7 +103,7 @@
     <a href="index.html" class="back-link" data-ja="← ホームに戻る" data-en="← Back to Home">← ホームに戻る</a>
     <h1 data-ja="プライバシーポリシー" data-en="Privacy Policy">プライバシーポリシー</h1>
 
-    <h2 data-ja="最終更新日: 2026年5月2日" data-en="Last Updated: May 2, 2026">最終更新日: 2026年5月2日</h2>
+    <h2 data-ja="最終更新日: 2026年6月30日" data-en="Last Updated: June 30, 2026">最終更新日: 2026年6月30日</h2>
 
     <p data-ja="VICIOUS（「当社」）は、お客様のプライバシーを保護することにコミットしています。このプライバシーポリシーは、当社のアプリケーションやサービスを使用する際に、当社がどのように情報を収集、使用、保護するかを説明します。" data-en='VICIOUS ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our applications and services.'>
       VICIOUS（「当社」）は、お客様のプライバシーを保護することにコミットしています。このプライバシーポリシーは、当社のアプリケーションやサービスを使用する際に、当社がどのように情報を収集、使用、保護するかを説明します。
@@ -123,6 +123,13 @@
       <li data-ja="<strong>デバイス情報:</strong> デバイスの種類、オペレーティングシステム、一意のデバイス識別子。" data-en="<strong>Device Information:</strong> Device type, operating system, and unique device identifiers.">
         <strong>デバイス情報:</strong> デバイスの種類、オペレーティングシステム、一意のデバイス識別子。
       </li>
+      <li
+        data-ja="<strong>端末識別子のハッシュ値（Android ID）：</strong> 無料特典の重複取得等の不正利用を防止する目的で、Android端末固有のAndroid ID（Settings.Secure.ANDROID_ID）をSHA-256アルゴリズムでハッシュ化した値をサーバーへ送信し、Firestoreに記録します。ハッシュ化は一方向処理であり、保存されたハッシュ値から元のAndroid IDを復元することは技術的に不可能です。raw値（ハッシュ化前の値）は一切送信・保存されません。"
+        data-en="<strong>Device Identifier Hash (Android ID):</strong> To prevent duplicate free-credit abuse and other fraudulent activities, we derive a SHA-256 hash of the device's Android ID (Settings.Secure.ANDROID_ID) and transmit it to our server, where it is stored in Firestore. The hashing is a one-way process; the original Android ID cannot be recovered from the stored hash value, and the raw (pre-hash) value is never transmitted or stored."
+      >
+        <strong>Device Identifier Hash (Android ID):</strong> To prevent duplicate free-credit abuse and other fraudulent activities, we derive a SHA-256 hash of the device's Android ID (Settings.Secure.ANDROID_ID) and transmit it to our server, where it is stored in Firestore. The hashing is a one-way process; the original Android ID cannot be recovered from the stored hash value, and the raw (pre-hash) value is never transmitted or stored.
+      </li>
+
       <li data-ja="<strong>コンテンツデータ:</strong> 分析のためにアップロードする動画、画像、その他のコンテンツ（例：ゴルフスイング動画、言語学習録音）。" data-en="<strong>Content Data:</strong> Videos, images, or other content you upload for analysis (e.g., golf swing videos, language learning recordings).">
         <strong>コンテンツデータ:</strong> 分析のためにアップロードする動画、画像、その他のコンテンツ（例：ゴルフスイング動画、言語学習録音）。
       </li>
