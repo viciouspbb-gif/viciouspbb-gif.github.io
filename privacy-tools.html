@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy (Simple Tools) - VICIOUS</title>
+  <style>
+    :root {
+      --bg: #050608;
+      --panel: #10141c;
+      --accent: #ff6b35;
+      --text: #f5f7fb;
+      --muted: #9aa0b5;
+      font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, rgba(255, 107, 53, 0.25), transparent 55%), var(--bg);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .card {
+      width: min(800px, 100%);
+      background: var(--panel);
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 35px 70px rgba(0, 0, 0, 0.35);
+      padding: 48px;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      letter-spacing: 0.04em;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 32px;
+      margin-bottom: 16px;
+    }
+    p {
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+    ul {
+      color: var(--muted);
+      line-height: 1.8;
+      padding-left: 20px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: var(--accent);
+    }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .lang-switch button {
+      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text);
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+    .lang-switch button:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .lang-switch button.active {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    .highlight-box {
+      margin: 24px 0;
+      padding: 18px 20px;
+      border-radius: 12px;
+      background: rgba(255, 107, 53, 0.08);
+      border: 1px solid rgba(255, 107, 53, 0.25);
+    }
+    .highlight-box p {
+      margin: 0;
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="lang-switch">
+      <button id="lang-ja" class="active" onclick="setLanguage('ja')">日本語</button>
+      <button id="lang-en" onclick="setLanguage('en')">English</button>
+    </div>
+
+    <a href="index.html" class="back-link" data-ja="← ホームに戻る" data-en="← Back to Home">← ホームに戻る</a>
+    <h1 data-ja="プライバシーポリシー（Simple Tools）" data-en="Privacy Policy (Simple Tools)">プライバシーポリシー（Simple Tools）</h1>
+
+    <h2 data-ja="最終更新日: 2026年7月27日" data-en="Last Updated: July 27, 2026">最終更新日: 2026年7月27日</h2>
+
+    <p data-ja="本ポリシーは、VICIOUS（「当社」）が提供する『Simple Tools』シリーズ（shotclean、filerename）に適用されます。これらのアプリは、当社の他の本格的なAIプロダクト（Learn BISAYA、Learn INDONESIA、SwingTrace PROなど）とは異なり、サーバー通信を一切行わない完全オンデバイス処理のアプリです。他プロダクトのプライバシーポリシーはこのアプリには適用されません。" data-en='This policy applies to the "Simple Tools" series (shotclean, filerename) provided by VICIOUS ("we", "our", or "us"). Unlike our other full-scale AI products (Learn BISAYA, Learn INDONESIA, SwingTrace PRO, etc.), these apps perform all processing entirely on-device and do not communicate with any server. The privacy policy for our other products does not apply to these apps.'>
+      本ポリシーは、VICIOUS（「当社」）が提供する『Simple Tools』シリーズ（shotclean、filerename）に適用されます。これらのアプリは、当社の他の本格的なAIプロダクト（Learn BISAYA、Learn INDONESIA、SwingTrace PROなど）とは異なり、サーバー通信を一切行わない完全オンデバイス処理のアプリです。他プロダクトのプライバシーポリシーはこのアプリには適用されません。
+    </p>
+
+    <div class="highlight-box">
+      <p data-ja="<strong>重要:</strong> shotclean・filerenameは、写真・画像データや位置情報を外部サーバーへ送信することはなく、当社（開発者）がこれらのデータを収集・保存することは一切ありません。すべての処理は端末内（オンデバイス）で完結します。" data-en="<strong>Important:</strong> shotclean and filerename never transmit your photos, images, or location data to any external server, and we (the developer) never collect or store this data. All processing takes place entirely on your device.">
+        <strong>重要:</strong> shotclean・filerenameは、写真・画像データや位置情報を外部サーバーへ送信することはなく、当社（開発者）がこれらのデータを収集・保存することは一切ありません。すべての処理は端末内（オンデバイス）で完結します。
+      </p>
+    </div>
+
+    <h2 data-ja="1. 対象アプリ" data-en="1. Apps Covered">1. 対象アプリ</h2>
+    <ul>
+      <li data-ja="<strong>shotclean:</strong> スクリーンショットの検出・整理を行うアプリ。" data-en="<strong>shotclean:</strong> An app that detects and organizes screenshots.">
+        <strong>shotclean:</strong> スクリーンショットの検出・整理を行うアプリ。
+      </li>
+      <li data-ja="<strong>filerename:</strong> 通常の写真に対してリネームを提案するアプリ。" data-en="<strong>filerename:</strong> An app that suggests filenames for your regular photos.">
+        <strong>filerename:</strong> 通常の写真に対してリネームを提案するアプリ。
+      </li>
+    </ul>
+
+    <h2 data-ja="2. アクセスする情報とその取り扱い" data-en="2. Information Accessed and How It Is Handled">2. アクセスする情報とその取り扱い</h2>
+    <p data-ja="上記アプリの機能を提供するため、以下の情報にアクセスしますが、いずれも端末内での処理にとどまり、サーバーへの送信は一切行われません。" data-en="To provide the features described above, the apps access the following information. In every case, processing is limited to your device and nothing is transmitted to a server.">
+      上記アプリの機能を提供するため、以下の情報にアクセスしますが、いずれも端末内での処理にとどまり、サーバーへの送信は一切行われません。
+    </p>
+    <ul>
+      <li data-ja="<strong>写真ライブラリへのアクセス:</strong> スクリーンショットの検出・整理（shotclean）、または通常写真のリネーム提案（filerename）のために、端末内の写真ライブラリにアクセスします。写真データが外部に送信されることはありません。" data-en="<strong>Photo Library Access:</strong> The apps access your device's photo library to detect and organize screenshots (shotclean) or to suggest filenames for regular photos (filerename). Photo data is never sent outside your device.">
+        <strong>写真ライブラリへのアクセス:</strong> スクリーンショットの検出・整理（shotclean）、または通常写真のリネーム提案（filerename）のために、端末内の写真ライブラリにアクセスします。写真データが外部に送信されることはありません。
+      </li>
+      <li data-ja="<strong>画像内テキストの読み取り（OCR、shotcleanのみ）:</strong> Google ML Kitのオンデバイス機能を使用して画像内のテキストを読み取ります。この処理はすべて端末内で完結し、画像データ・読み取られたテキストデータのいずれもサーバーへ送信されることはありません。" data-en="<strong>On-Device Text Recognition (OCR, shotclean only):</strong> Text within images is read using Google ML Kit's on-device text recognition feature. This processing happens entirely on your device; neither the image data nor the recognized text is ever sent to a server.">
+        <strong>画像内テキストの読み取り（OCR、shotcleanのみ）:</strong> Google ML Kitのオンデバイス機能を使用して画像内のテキストを読み取ります。この処理はすべて端末内で完結し、画像データ・読み取られたテキストデータのいずれもサーバーへ送信されることはありません。
+      </li>
+      <li data-ja="<strong>Exif情報・位置情報（filerenameのみ）:</strong> ファイル名のリネーム提案は、写真のExifに含まれる撮影日時・GPS情報と、端末内のGeocoder機能によるオンデバイス処理のみに基づいて行われます。位置情報がサーバーへ送信されることはありません。" data-en="<strong>Exif Data and Location Information (filerename only):</strong> Filename suggestions are generated using only the capture date/time and GPS information contained in a photo's Exif data, combined with on-device processing via the device's Geocoder. Location information is never transmitted to a server.">
+        <strong>Exif情報・位置情報（filerenameのみ）:</strong> ファイル名のリネーム提案は、写真のExifに含まれる撮影日時・GPS情報と、端末内のGeocoder機能によるオンデバイス処理のみに基づいて行われます。位置情報がサーバーへ送信されることはありません。
+      </li>
+      <li data-ja="<strong>タグ情報・リネーム履歴:</strong> アプリが生成するタグ情報やリネーム履歴は、端末内のローカルデータベースにのみ保存され、外部サーバーへ送信・保存されることはありません。" data-en="<strong>Tag Information and Rename History:</strong> Tag information and rename history generated by the apps are stored only in a local database on your device and are never sent to or stored on an external server.">
+        <strong>タグ情報・リネーム履歴:</strong> アプリが生成するタグ情報やリネーム履歴は、端末内のローカルデータベースにのみ保存され、外部サーバーへ送信・保存されることはありません。
+      </li>
+    </ul>
+
+    <h2 data-ja="3. 広告（Google AdMob）" data-en="3. Advertising (Google AdMob)">3. 広告（Google AdMob）</h2>
+    <p data-ja="無料版では広告表示のためにGoogle AdMobを使用しています。AdMobは広告識別子などの情報を収集する場合があります。この情報の収集・利用はGoogleによって行われ、当社が収集・保存することはありません。詳細はGoogleのプライバシーポリシーをご確認ください。" data-en="The free version of these apps uses Google AdMob to display advertisements. AdMob may collect information such as advertising identifiers. This information is collected and used by Google, not by us. Please refer to Google's Privacy Policy for details.">
+      無料版では広告表示のためにGoogle AdMobを使用しています。AdMobは広告識別子などの情報を収集する場合があります。この情報の収集・利用はGoogleによって行われ、当社が収集・保存することはありません。詳細はGoogleのプライバシーポリシーをご確認ください。
+    </p>
+    <p>
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" data-ja="Googleプライバシーポリシー" data-en="Google Privacy Policy">Googleプライバシーポリシー</a>
+    </p>
+
+    <h2 data-ja="4. 課金（Google Play Billing Library）" data-en="4. Payments (Google Play Billing Library)">4. 課金（Google Play Billing Library）</h2>
+    <p data-ja="広告を非表示にする買い切り課金（アプリ内課金）には、Google Play Billing Libraryを使用しています。クレジットカード情報などの決済情報自体は当社では保持せず、Google Playが管理します。" data-en="The one-time in-app purchase to remove ads uses the Google Play Billing Library. We do not hold your payment information (such as credit card details) ourselves; it is managed by Google Play.">
+      広告を非表示にする買い切り課金（アプリ内課金）には、Google Play Billing Libraryを使用しています。クレジットカード情報などの決済情報自体は当社では保持せず、Google Playが管理します。
+    </p>
+
+    <h2 data-ja="5. 外部サーバーへのデータ送信について" data-en="5. Data Transmission to External Servers">5. 外部サーバーへのデータ送信について</h2>
+    <p data-ja="上記3.（AdMob）および4.（Google Play Billing）でGoogleの各サービスが情報を扱う場合を除き、当社（開発者）がshotclean・filerenameを通じて写真、画像、テキスト、位置情報などのデータを外部サーバーに収集・保存することは一切ありません。" data-en="Except for the information handled by Google's own services as described in Sections 3 (AdMob) and 4 (Google Play Billing), we (the developer) never collect or store photos, images, text, location data, or any other data via shotclean or filerename on an external server.">
+      上記3.（AdMob）および4.（Google Play Billing）でGoogleの各サービスが情報を扱う場合を除き、当社（開発者）がshotclean・filerenameを通じて写真、画像、テキスト、位置情報などのデータを外部サーバーに収集・保存することは一切ありません。
+    </p>
+
+    <h2 data-ja="6. お客様の権利" data-en="6. Your Rights">6. お客様の権利</h2>
+    <p data-ja="タグ情報・リネーム履歴は端末内のローカルデータベースにのみ保存されているため、アプリ内の設定またはアプリのアンインストールにより、いつでもこれらのデータを削除できます。" data-en="Because tag information and rename history are stored only in a local database on your device, you can delete this data at any time via the app's settings or by uninstalling the app.">
+      タグ情報・リネーム履歴は端末内のローカルデータベースにのみ保存されているため、アプリ内の設定またはアプリのアンインストールにより、いつでもこれらのデータを削除できます。
+    </p>
+
+    <h2 data-ja="7. 子供のプライバシー" data-en="7. Children's Privacy">7. 子供のプライバシー</h2>
+    <p data-ja="当社のサービスは13歳未満の子供を対象としていません。当社は13歳未満の子供から意図的に個人情報を収集しません。" data-en="Our services are not intended for children under 13. We do not knowingly collect personal information from children under 13.">
+      当社のサービスは13歳未満の子供を対象としていません。当社は13歳未満の子供から意図的に個人情報を収集しません。
+    </p>
+
+    <h2 data-ja="8. ポリシーの変更" data-en="8. Changes to This Policy">8. ポリシーの変更</h2>
+    <p data-ja="当社はこのプライバシーポリシーを随時更新する場合があります。変更を通知するために、このページに新しいポリシーを投稿します。" data-en="We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page.">
+      当社はこのプライバシーポリシーを随時更新する場合があります。変更を通知するために、このページに新しいポリシーを投稿します。
+    </p>
+
+    <h2 data-ja="9. お問い合わせ" data-en="9. Contact Us">9. お問い合わせ</h2>
+    <p data-ja="このプライバシーポリシーについてご質問がある場合は、以下までお問い合わせください：" data-en="If you have questions about this Privacy Policy, please contact us at:">
+      このプライバシーポリシーについてご質問がある場合は、以下までお問い合わせください：
+    </p>
+    <p>
+      Email: <a href="mailto:vicious.global.office@gmail.com">vicious.global.office@gmail.com</a>
+    </p>
+  </main>
+
+  <script>
+    let currentLang = 'ja';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.getElementById('lang-ja').classList.toggle('active', lang === 'ja');
+      document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+      document.querySelectorAll('[data-ja][data-en]').forEach(el => {
+        el.innerHTML = el.getAttribute(`data-${lang}`);
+      });
+    }
+
+    setLanguage('ja');
+  </script>
+</body>
+</html>
