@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delete Account - LearnIndonesia</title>
+  <style>
+    :root {
+      --bg: #050608;
+      --panel: #10141c;
+      --accent: #ff6b35;
+      --text: #f5f7fb;
+      --muted: #9aa0b5;
+      font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, rgba(255, 107, 53, 0.25), transparent 55%), var(--bg);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .card {
+      width: min(800px, 100%);
+      background: var(--panel);
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 35px 70px rgba(0, 0, 0, 0.35);
+      padding: 48px;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      letter-spacing: 0.04em;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 32px;
+      margin-bottom: 16px;
+    }
+    p {
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+    ul, ol {
+      color: var(--muted);
+      line-height: 1.8;
+      padding-left: 20px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: var(--accent);
+    }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .lang-switch button {
+      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text);
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+    .lang-switch button:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .lang-switch button.active {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="lang-switch">
+      <button id="lang-ja" class="active" onclick="setLanguage('ja')">日本語</button>
+      <button id="lang-en" onclick="setLanguage('en')">English</button>
+    </div>
+
+    <a href="index.html" class="back-link" data-ja="← ホームに戻る" data-en="← Back to Home">← ホームに戻る</a>
+    <h1 data-ja="LearnIndonesia アカウント削除について" data-en="LearnIndonesia Account Deletion">LearnIndonesia アカウント削除について</h1>
+
+    <h2 data-ja="アカウント削除の手順" data-en="How to Delete Your Account">アカウント削除の手順</h2>
+    <ol>
+      <li data-ja="LearnIndonesiaアプリを開く" data-en="Open the LearnIndonesia app">LearnIndonesiaアプリを開く</li>
+      <li data-ja="ログイン後、設定画面を開く" data-en="After logging in, open the Settings screen">ログイン後、設定画面を開く</li>
+      <li data-ja="「アカウント削除」を選択" data-en='Select "Delete Account"'>「アカウント削除」を選択</li>
+      <li data-ja="確認後、アカウントが削除される" data-en="After confirming, your account will be deleted">確認後、アカウントが削除される</li>
+    </ol>
+
+    <h2 data-ja="削除されるデータ" data-en="Data That Will Be Deleted">削除されるデータ</h2>
+    <ul>
+      <li data-ja="Firebaseアカウント情報（メールアドレス、認証情報）" data-en="Firebase account information (email address, authentication credentials)">Firebaseアカウント情報（メールアドレス、認証情報）</li>
+    </ul>
+
+    <h2 data-ja="削除されないデータ" data-en="Data That Will NOT Be Deleted">削除されないデータ</h2>
+    <p data-ja="端末ローカルに保存された学習履歴・翻訳キャッシュは、アカウント削除処理の対象外です。これらのデータは端末内にのみ保存されており、サーバーには送信されません。完全に削除するには、アプリをアンインストール（再インストール）してください。" data-en="Learning history and translation cache stored locally on your device are not affected by account deletion. This data is stored only on your device and is never sent to our servers. To completely remove it, please uninstall (and, if needed, reinstall) the app.">
+      端末ローカルに保存された学習履歴・翻訳キャッシュは、アカウント削除処理の対象外です。これらのデータは端末内にのみ保存されており、サーバーには送信されません。完全に削除するには、アプリをアンインストール（再インストール）してください。
+    </p>
+
+    <h2 data-ja="お問い合わせ" data-en="Contact Us">お問い合わせ</h2>
+    <p data-ja="アカウント削除についてご質問がある場合は、以下までお問い合わせください：" data-en="If you have questions about account deletion, please contact us at:">
+      アカウント削除についてご質問がある場合は、以下までお問い合わせください：
+    </p>
+    <p>
+      Email: <a href="mailto:vicious.pbb@gmail.com">vicious.pbb@gmail.com</a>
+    </p>
+  </main>
+
+  <script>
+    let currentLang = 'ja';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.getElementById('lang-ja').classList.toggle('active', lang === 'ja');
+      document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+      document.querySelectorAll('[data-ja][data-en]').forEach(el => {
+        el.innerHTML = el.getAttribute(`data-${lang}`);
+      });
+    }
+
+    setLanguage('ja');
+  </script>
+</body>
+</html>
