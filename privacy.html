@@ -124,10 +124,10 @@
         <strong>デバイス情報:</strong> デバイスの種類、オペレーティングシステム、一意のデバイス識別子。
       </li>
       <li
-        data-ja="<strong>端末識別子のハッシュ値（Android ID）：</strong> 無料特典の重複取得等の不正利用を防止する目的で、Android端末固有のAndroid ID（Settings.Secure.ANDROID_ID）をSHA-256アルゴリズムでハッシュ化した値をサーバーへ送信し、Firestoreに記録します。ハッシュ化は一方向処理であり、保存されたハッシュ値から元のAndroid IDを復元することは技術的に不可能です。raw値（ハッシュ化前の値）は一切送信・保存されません。"
-        data-en="<strong>Device Identifier Hash (Android ID):</strong> To prevent duplicate free-credit abuse and other fraudulent activities, we derive a SHA-256 hash of the device's Android ID (Settings.Secure.ANDROID_ID) and transmit it to our server, where it is stored in Firestore. The hashing is a one-way process; the original Android ID cannot be recovered from the stored hash value, and the raw (pre-hash) value is never transmitted or stored."
+        data-ja="<strong>端末識別子：</strong> 無料特典の重複取得を防ぐため、端末を識別する情報（ハッシュ化した値）を取得し、サーバーに記録します。"
+        data-en="<strong>Device identifier:</strong> To prevent duplicate claims of free benefits, we collect a hashed device identifier and store it on our server."
       >
-        <strong>Device Identifier Hash (Android ID):</strong> To prevent duplicate free-credit abuse and other fraudulent activities, we derive a SHA-256 hash of the device's Android ID (Settings.Secure.ANDROID_ID) and transmit it to our server, where it is stored in Firestore. The hashing is a one-way process; the original Android ID cannot be recovered from the stored hash value, and the raw (pre-hash) value is never transmitted or stored.
+        <strong>Device identifier:</strong> To prevent duplicate claims of free benefits, we collect a hashed device identifier and store it on our server.
       </li>
 
       <li data-ja="<strong>広告識別子（広告ID）等:</strong> 本アプリは広告配信にGoogle AdMobを使用しており、Googleが広告ID、端末情報などを収集する場合があります。" data-en="<strong>Advertising ID, etc.:</strong> This app uses Google AdMob to serve ads, and Google may collect the advertising ID, device information, and similar data.">
